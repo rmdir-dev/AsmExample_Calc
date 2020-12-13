@@ -26,6 +26,7 @@ _stringToInt:
 ; INPUT
 ; rax = string 1
 ; rbx = string 2
+;
 ; OUTPUT
 ; rax 
 ;   = 0 the strings are equal
@@ -74,6 +75,7 @@ _CmpString:
 
 ; INPUT
 ; rax = the string
+;
 ; OUTPUT
 ; rax = the string size
 _GetStringSize:

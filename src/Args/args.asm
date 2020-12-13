@@ -22,7 +22,13 @@ section .text
     global _ProcessArgs
     global _GetMode
     global _ShowDefaultMode
-; input rax = arg
+
+; INPUT
+; rax = arg
+;
+; OUTPUT
+; NONE
+; process the cmd line args
 _ProcessArgs:
     push rax            ; push the string address
     mov rbx, arg_a      ; mov arg_a into rbx for compare
@@ -124,11 +130,22 @@ _ProcessArgs:
 .return:
     ret
 
+; INPUT
+; NONE
+; 
+; OUTPUT
+; NONE
+; print the default mode
 _ShowDefaultMode:
     mov rax, mode_a
     call _printString
     ret
 
+; INPUT
+; NONE
+; 
+; OUTPUT
+; NONE
 ; return the mode
 ; rax = the current mode
 ; mode 0 = addition

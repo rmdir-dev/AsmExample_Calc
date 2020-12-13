@@ -18,6 +18,12 @@ section .data
 section .text
     global _CalculatorMain
 
+; INPUT
+; NONE
+;
+; OUTPUT
+; NONE
+; do the calculator code
 _CalculatorMain:
     mov rax, text
     call _printString

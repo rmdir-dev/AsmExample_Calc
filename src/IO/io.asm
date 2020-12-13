@@ -16,6 +16,9 @@ section .text
 ;           INPUT
 ;--------------------------
 
+; INPUT
+; NONE
+;
 ; OUTPUT
 ; rax = input length
 ; rbx = buffer address
@@ -32,7 +35,9 @@ _GetUserIn:
 ;           OUTPUT
 ;--------------------------
 
-; INPUT : rax pointing to the string to print
+; INPUT 
+; rax pointing to the string to print
+;
 ; OUTPUT : NONE
 ; Print a string
 _printString:
@@ -49,8 +54,13 @@ _printString:
 
     ret             ; return
 
-; input rax = integer to print
-; input rbx = value length
+; INPUT
+; rax = integer to print
+; rbx = value length
+;
+; OUTPUT
+; NONE
+; print a string
 _printInteger:
     mov rcx, 10     ; counter set to 10
     push 0          ; count the number of char in the int
@@ -85,7 +95,12 @@ _printInteger:
     ;call _printReturnToLine
     ret
 
-; input rax = number to print
+; INPUT
+; rax = number to print
+;
+; OUTPUT
+; NONE
+; print a digit
 _printDigit:
     add rax, 48
     mov [digit], al
@@ -96,6 +111,11 @@ _printDigit:
     syscall
     ret
 
+; INPUT
+; NONE
+;
+; OUTPUT
+; NONE
 ; Return to the next line
 _printReturnToLine:
     mov rax, 1
