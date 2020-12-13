@@ -1,0 +1,6 @@
+temp/start.o
+temp/Args/args.o
+temp/Calc/calc.o
+temp/IO/io.o
+temp/String/string.o
+Calc
