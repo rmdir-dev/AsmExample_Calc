@@ -16,7 +16,8 @@ section .data
     minus db "-",0
 
 section .text
-    global _CalculatorMain
+    global _CalcUserIn
+    global _CalcFile
 
 ; INPUT
 ; NONE
@@ -24,7 +25,7 @@ section .text
 ; OUTPUT
 ; NONE
 ; do the calculator code
-_CalculatorMain:
+_CalcUserIn:
     mov rax, text
     call _printString
 
@@ -123,4 +124,9 @@ _CalculatorMain:
     call _printString
 
 .AllOperation:
+    ret
+
+; INPUT
+; OUTPUT
+_CalcFile:
     ret

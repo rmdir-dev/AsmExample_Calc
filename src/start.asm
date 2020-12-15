@@ -39,5 +39,5 @@ _start:
 .agrc_zero:
     call _ShowDefaultMode
 .argc_both:
-    call _CalculatorMain
+    call _CalcUserIn
     exit

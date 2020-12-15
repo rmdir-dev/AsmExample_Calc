@@ -1,2 +1,3 @@
 section .text
-    extern _CalculatorMain
+    extern _CalcUserIn
+    extern _CalcFile

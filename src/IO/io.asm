@@ -12,6 +12,10 @@ section .text
     global _printInteger
     global _printReturnToLine
     global _GetUserIn
+    global _OpenFile
+    global _ReadFile
+    global _WriteFile
+    global _CloseFile
 ;--------------------------
 ;           INPUT
 ;--------------------------
@@ -30,6 +34,15 @@ _GetUserIn:
     syscall             ; syscall
     mov rbx, in_buffer  ; set rax to buffer addr for return value
     ret                 ; return
+
+_OpenFile:
+    ret
+
+_CloseFile:
+    ret
+
+_ReadFile:
+    ret
 
 ;--------------------------
 ;           OUTPUT
@@ -123,4 +136,7 @@ _printReturnToLine:
     mov rsi, retToLine
     mov rdx, 1
     syscall
+    ret
+
+_WriteFile:
     ret

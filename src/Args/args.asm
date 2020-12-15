@@ -8,6 +8,7 @@ section .data
     arg_s db "-s",0     ; substract arg
     arg_m db "-m",0     ; multiply arg
     arg_d db "-d",0     ; divide arg
+    arg_f db "-f",0     ; from file
     mode_a db "Mode is add",10,0           ; add arg
     mode_s db "Mode is substract",10,0     ; substract arg
     mode_m db "Mode is multiply",10,0      ; multiply arg
@@ -16,6 +17,7 @@ section .data
                         ; mode 1 = substraction
                         ; mode 2 = multiply
                         ; mode 3 = divide
+                        ; mode 4 = from file
     mode_set db 00      ; set to 1 once mode is set
 
 section .text

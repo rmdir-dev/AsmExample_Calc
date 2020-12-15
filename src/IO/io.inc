@@ -3,3 +3,7 @@ section .text
     extern _printInteger
     extern _printReturnToLine
     extern _GetUserIn
+    extern _OpenFile
+    extern _ReadFile
+    extern _WriteFile
+    extern _CloseFile
